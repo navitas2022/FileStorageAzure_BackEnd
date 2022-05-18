@@ -1,6 +1,6 @@
 {
-  "host": "localhost",
-  "user": "root",
-  "database": "posts",
-  "password": "dbuser"
+  "host": "navmysqlserver.mysql.database.azure.com",
+  "user": "navpocuser",
+  "database": "mysqldatabase",
+  "password": "Test@123"
 }
