@@ -10,7 +10,7 @@ const errorController = require('./controllers/error');
 
 const app = express();
 
-const ports = process.env.PORT || 3000;
+const ports = process.env.PORT || 8080;
 
 app.use(bodyParser.json());
 
