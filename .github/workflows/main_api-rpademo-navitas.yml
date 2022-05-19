@@ -4,9 +4,6 @@
 name: Build and deploy Node.js app to Azure Web App - api-rpademo-navitas
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
@@ -14,6 +11,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
+      - uses: AutoModality/action-clean@v1
       - uses: actions/checkout@v2
 
       - name: Set up Node.js version
