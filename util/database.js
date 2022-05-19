@@ -1,5 +1,6 @@
 const mysql = require('mysql2');
-
+const fs = require('fs');
+const path = require('path');
 const config = require('../config/config.json');
 
 const pool = mysql.createPool({
@@ -7,6 +8,9 @@ const pool = mysql.createPool({
   user: config.user,
   database: config.database,
   password: config.password,
+  ssl: {
+    ca: fs.readFileSync(path.resolve(__dirname, '../BaltimoreCyberTrustRoot.crt.pem'))
+  },
 });
 
 module.exports = pool.promise();

@@ -1,6 +1,8 @@
+
 {
   "host": "navmysqlserver.mysql.database.azure.com",
   "user": "navpocuser",
-  "database": "mysqldatabase",
+  "database": "posts",
   "password": "Test@123"
+
 }
